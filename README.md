@@ -95,13 +95,20 @@ The script updates DNS when:
 ```ini
 CF_API_TOKEN=your_token_here
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...
-DEFAULT_TTL=120
-DEFAULT_PROXIED=true
-SUBDOMAIN_COUNT=2
+LOG_FILE=/var/log/ddns/ddns_update.log
 
-SUBDOMAIN_1=test.mydomain.com
+DEFAULT_TTL=120
+DEFAULT_PROXIED=false
+
+SUBDOMAIN_COUNT=3
+
+SUBDOMAIN_1=test.yourdomain.com
 SUBDOMAIN_1_TTL=300
 SUBDOMAIN_1_PROXIED=true
 
-SUBDOMAIN_2=home.mydomain.net
+SUBDOMAIN_2=home.yourdomain.com
+
+SUBDOMAIN_3=test3.yourdomain.com
+SUBDOMAIN_3_PROXIED=true
+SUBDOMAIN_3_TTL=600
 ```
